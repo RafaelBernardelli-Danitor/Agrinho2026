@@ -11,3 +11,93 @@
 
 
 </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech - O Futuro da Agricultura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agro<span>Tech</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Inovação e Sustentabilidade no Campo</h1>
+            <p>Conectando a tecnologia de ponta com a produção agrícola para cultivar um futuro melhor.</p>
+            <a href="#sobre" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="features">
+        <h2>Nossos Pilares</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Tecnologia de Precisão</h3>
+                <p>Uso de drones e sensores para monitoramento em tempo real da lavoura.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Sustentabilidade</h3>
+                <p>Práticas agrícolas que respeitam o meio ambiente e preservam os recursos naturais.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Alta Produtividade</h3>
+                <p>Otimização de colheitas com inteligência de dados e manejo inteligente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="gallery-section">
+        <h2>Nossa Produção</h2>
+        <p class="subtitle">Confira algumas imagens do dia a dia no campo e nossas tecnologias.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=600&q=80" alt="Plantação jovem crescendo">
+                <div class="overlay">Cultivo Jovem</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=600&q=80" alt="Trator no campo">
+                <div class="overlay">Maquinário Moderno</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1592982537447-744077110972?auto=format&fit=crop&w=600&q=80" alt="Tecnologia no campo">
+                <div class="overlay">Monitoramento Tech</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=600&q=80" alt="Colheita de trigo">
+                <div class="overlay">Grandes Colheitas</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+        <h2>Fale Conosco</h2>
+        <form id="contactForm">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <textarea id="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+        <div id="formFeedback" class="hidden"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroTech. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
