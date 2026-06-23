@@ -13,133 +13,427 @@
 </html>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Forte, Futuro Sustentável</title>
+    <title>Agro Forte | Futuro Sustentável</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
 <header>
-    <div class="logo">🌱 AgroForte</div>
+    <nav>
+        <div class="logo">
+            🌱 Agro Forte
+        </div>
 
-    <nav id="nav">
-        <a href="#home">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#beneficios">Benefícios</a>
-        <a href="#galeria">Galeria</a>
-        <a href="#contato">Contato</a>
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+        <button class="menu-mobile">☰</button>
     </nav>
-
-    <div class="menu-toggle" id="menu-toggle">
-        ☰
-    </div>
 </header>
 
-<section class="hero" id="home">
+<section id="inicio" class="hero">
     <div class="hero-content">
         <h1>Agro Forte, Futuro Sustentável</h1>
-
         <p>
-            Produzir mais, preservar melhor e construir um futuro
-            equilibrado entre agricultura e meio ambiente.
+            Produzindo alimentos com responsabilidade,
+            preservando o meio ambiente para as futuras gerações.
         </p>
 
-        <a href="#sobre" class="btn">Descobrir Mais</a>
+        <button onclick="saibaMais()" class="btn">
+            Saiba Mais
+        </button>
     </div>
 </section>
 
-<section class="sobre reveal" id="sobre">
-
-    <div class="container">
-
-        <div class="text">
-            <h2>Produção com Responsabilidade</h2>
-
-            <p>
-                A agricultura moderna utiliza tecnologia, inovação e
-                práticas sustentáveis para garantir alimentos de qualidade,
-                preservar recursos naturais e fortalecer a economia.
-            </p>
-
-            <p>
-                O equilíbrio entre produtividade e preservação ambiental
-                é fundamental para as próximas gerações.
-            </p>
-        </div>
-
-        <div class="image">
-            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="Agricultura">
-        </div>
-
-    </div>
-
-</section>
-
-<section class="beneficios reveal" id="beneficios">
-
-    <h2>Benefícios do Agro Sustentável</h2>
+<section id="sobre" class="sobre">
+    <h2>Sobre o Projeto</h2>
 
     <div class="cards">
-
         <div class="card">
-            <span>🌿</span>
-            <h3>Preservação</h3>
-            <p>Proteção do solo, água e biodiversidade.</p>
+            <h3>🌾 Produção</h3>
+            <p>
+                O agronegócio é responsável por alimentar milhões de pessoas
+                e movimentar a economia.
+            </p>
         </div>
 
         <div class="card">
-            <span>🚜</span>
-            <h3>Tecnologia</h3>
-            <p>Uso inteligente de recursos e agricultura de precisão.</p>
+            <h3>🌳 Preservação</h3>
+            <p>
+                Tecnologias sustentáveis ajudam a reduzir impactos ambientais.
+            </p>
         </div>
 
         <div class="card">
-            <span>🌎</span>
-            <h3>Futuro Verde</h3>
-            <p>Produção responsável para as próximas gerações.</p>
+            <h3>🚜 Inovação</h3>
+            <p>
+                Máquinas modernas aumentam a produtividade e economizam recursos.
+            </p>
         </div>
+    </div>
+</section>
 
+<section id="sustentabilidade" class="sustentabilidade">
+
+    <div class="texto">
+        <h2>Sustentabilidade no Campo</h2>
+
+        <p>
+            O equilíbrio entre produção agrícola e preservação ambiental é
+            essencial para garantir recursos naturais às próximas gerações.
+        </p>
+
+        <button class="btn-verde">
+            Conheça Mais
+        </button>
+    </div>
+
+    <div class="imagem">
+        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="Campo agrícola">
     </div>
 
 </section>
 
-<section class="galeria reveal" id="galeria">
+<section class="estatisticas">
 
-    <h2>Galeria do Campo</h2>
+    <div class="numero">
+        <h3>85%</h3>
+        <p>Uso eficiente da água</p>
+    </div>
 
-    <div class="gallery-grid">
+    <div class="numero">
+        <h3>70%</h3>
+        <p>Redução de desperdícios</p>
+    </div>
 
-        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
-        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="">
-        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735" alt="">
-        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027" alt="">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
-
+    <div class="numero">
+        <h3>100%</h3>
+        <p>Compromisso ambiental</p>
     </div>
 
 </section>
 
-<footer id="contato">
+<section id="contato" class="contato">
 
-    <h3>Agro Forte, Futuro Sustentável</h3>
+    <h2>Entre em Contato</h2>
 
-    <div class="socials">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">YouTube</a>
-    </div>
+    <form>
+        <input type="text" placeholder="Seu nome">
 
-    <p>© 2026 - Todos os direitos reservados.</p>
+        <input type="email" placeholder="Seu e-mail">
 
+        <textarea placeholder="Sua mensagem"></textarea>
+
+        <button type="submit">
+            Enviar Mensagem
+        </button>
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Agro Forte - Futuro Sustentável</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* NAVBAR */
+
+header{
+    position:fixed;
+    width:100%;
+    background:#1b5e20;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+}
+
+.logo{
+    color:white;
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#a5d6a7;
+}
+
+.menu-mobile{
+    display:none;
+    font-size:1.8rem;
+    background:none;
+    border:none;
+    color:white;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    background:#4caf50;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+}
+
+/* SOBRE */
+
+.sobre{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.sobre h2{
+    margin-bottom:50px;
+    color:#1b5e20;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* SUSTENTABILIDADE */
+
+.sustentabilidade{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    padding:80px 8%;
+    gap:40px;
+}
+
+.texto{
+    flex:1;
+}
+
+.texto h2{
+    color:#1b5e20;
+    margin-bottom:20px;
+}
+
+.btn-verde{
+    margin-top:20px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+.imagem{
+    flex:1;
+}
+
+.imagem img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* ESTATÍSTICAS */
+
+.estatisticas{
+    background:#2e7d32;
+    color:white;
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    padding:60px;
+    flex-wrap:wrap;
+}
+
+.numero{
+    text-align:center;
+}
+
+.numero h3{
+    font-size:3rem;
+}
+
+/* CONTATO */
+
+.contato{
+    padding:100px 8%;
+    text-align:center;
+}
+
+.contato h2{
+    color:#1b5e20;
+    margin-bottom:30px;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+textarea{
+    height:150px;
+}
+
+form button{
+    background:#1b5e20;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.nav-links{
+    display:none;
+}
+
+.menu-mobile{
+    display:block;
+}
+
+}
+function saibaMais() {
+    document
+    .getElementById("sobre")
+    .scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+const menuBtn =
+document.querySelector(".menu-mobile");
+
+const nav =
+document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+
+    if(nav.style.display === "flex"){
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "flex";
+        nav.style.flexDirection = "column";
+        nav.style.position = "absolute";
+        nav.style.top = "70px";
+        nav.style.right = "20px";
+        nav.style.background = "#1b5e20";
+        nav.style.padding = "20px";
+        nav.style.borderRadius = "10px";
+    }
+
+});
