@@ -13,168 +13,569 @@
 </html>
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Agro Forte - Futuro Sustentável</title>
+<title>Agro Forte | Futuro Sustentável</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+rel="stylesheet"
+/>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
 
-<div class="menu-btn">
-<i class="fas fa-ellipsis-v"></i>
-</div>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            🌱 Agro Forte
+        </div>
 
-<nav class="sidebar">
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#impacto">Impacto</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
 
-<h2>🌱 Agro Forte</h2>
+        <div class="actions">
+            <button id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
 
-<ul>
-<li><a href="#home">Início</a></li>
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#sustentabilidade">Sustentabilidade</a></li>
-<li><a href="#tecnologia">Tecnologia</a></li>
-<li><a href="#contato">Contato</a></li>
-</ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+</header>
 
-</nav>
+<section id="inicio" class="hero">
 
-<section id="home" class="hero">
+    <div class="hero-overlay"></div>
 
-<div class="overlay">
+    <div class="hero-content reveal">
 
-<h1>Agro Forte, Futuro Sustentável</h1>
+        <h1>
+            Agro Forte,
+            <span>Futuro Sustentável</span>
+        </h1>
 
-<p>
-Equilíbrio entre produção agrícola e preservação ambiental.
-</p>
+        <p>
+            Produzir mais, preservar melhor e construir um futuro equilibrado
+            entre tecnologia, produtividade e meio ambiente.
+        </p>
 
-<button class="btn">
-Explorar
-</button>
+        <a href="#sobre" class="cta-btn">
+            Conheça o Projeto
+        </a>
 
-</div>
-
-</section>
-
-<section id="sobre">
-
-<h2>Sobre o Projeto</h2>
-
-<div class="cards">
-
-<div class="card">
-<i class="fas fa-seedling"></i>
-<h3>Produção Responsável</h3>
-<p>
-Incentivando práticas agrícolas sustentáveis.
-</p>
-</div>
-
-<div class="card">
-<i class="fas fa-tree"></i>
-<h3>Preservação Ambiental</h3>
-<p>
-Protegendo recursos naturais para futuras gerações.
-</p>
-</div>
-
-<div class="card">
-<i class="fas fa-tractor"></i>
-<h3>Agro Moderno</h3>
-<p>
-Tecnologia e eficiência no campo.
-</p>
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section id="sustentabilidade">
+<section id="sobre" class="about reveal">
 
-<h2>Sustentabilidade em Números</h2>
+    <div class="container">
 
-<div class="counter-container">
+        <h2>Produção e Sustentabilidade Caminhando Juntas</h2>
 
-<div class="counter-box">
-<span class="counter" data-target="95">0</span>
-<h3>% de eficiência hídrica</h3>
-</div>
+        <p>
+            O agronegócio moderno utiliza inovação, monitoramento ambiental
+            e técnicas sustentáveis para aumentar a produtividade sem comprometer
+            os recursos naturais.
+        </p>
 
-<div class="counter-box">
-<span class="counter" data-target="1200">0</span>
-<h3>Hectares preservados</h3>
-</div>
+        <div class="cards">
 
-<div class="counter-box">
-<span class="counter" data-target="300">0</span>
-<h3>Produtores participantes</h3>
-</div>
+            <div class="card">
+                <i class="fas fa-seedling"></i>
+                <h3>Agricultura Sustentável</h3>
+                <p>Uso eficiente do solo e conservação ambiental.</p>
+            </div>
 
-</div>
+            <div class="card">
+                <i class="fas fa-droplet"></i>
+                <h3>Gestão Hídrica</h3>
+                <p>Uso inteligente dos recursos de água.</p>
+            </div>
 
-</section>
+            <div class="card">
+                <i class="fas fa-robot"></i>
+                <h3>Tecnologia Rural</h3>
+                <p>Monitoramento, drones e agricultura de precisão.</p>
+            </div>
 
-<section id="tecnologia">
+        </div>
 
-<h2>Tecnologia no Campo</h2>
-
-<div class="tech-grid">
-
-<div class="tech-card">
-<h3>🚁 Drones</h3>
-<p>Monitoramento inteligente das lavouras.</p>
-</div>
-
-<div class="tech-card">
-<h3>📡 Sensores</h3>
-<p>Análise do solo em tempo real.</p>
-</div>
-
-<div class="tech-card">
-<h3>🤖 IA Agrícola</h3>
-<p>Tomada de decisão baseada em dados.</p>
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section id="contato">
+<section id="impacto" class="stats">
 
-<h2>Fale Conosco</h2>
+    <div class="container">
 
-<form>
+        <h2 class="reveal">Impactos Positivos</h2>
 
-<input type="text" placeholder="Nome">
+        <div class="stats-grid">
 
-<input type="email" placeholder="Email">
+            <div class="stat reveal">
+                <span class="counter" data-target="95">0</span>
+                <h3>% Eficiência</h3>
+            </div>
 
-<textarea placeholder="Mensagem"></textarea>
+            <div class="stat reveal">
+                <span class="counter" data-target="80">0</span>
+                <h3>% Economia de Água</h3>
+            </div>
 
-<button type="submit" class="btn">
-Enviar
-</button>
+            <div class="stat reveal">
+                <span class="counter" data-target="100">0</span>
+                <h3>% Compromisso Ambiental</h3>
+            </div>
 
-</form>
+        </div>
+
+    </div>
 
 </section>
 
-<footer>
-<p>© 2026 Agro Forte | Futuro Sustentável</p>
+<section id="galeria" class="gallery">
+
+    <h2 class="reveal">Galeria do Futuro Verde</h2>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="">
+        </div>
+
+        <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="">
+        </div>
+
+        <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
+        </div>
+
+        <div class="gallery-item reveal">
+            <img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="contato">
+
+    <h3>Agro Forte</h3>
+
+    <p>
+        Construindo um futuro sustentável através da inovação no campo.
+    </p>
+
+    <div class="socials">
+
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 Agro Forte - Todos os direitos reservados.
+    </p>
+
 </footer>
 
 <script src="script.js"></script>
 
 </body>
 </html>
+:root{
+    --primary:#2E7D32;
+    --secondary:#81C784;
+    --dark:#0f172a;
+    --light:#f8fafc;
+    --text:#1e293b;
+    --card:#ffffff;
+}
+
+.dark-mode{
+    --light:#0f172a;
+    --text:#f8fafc;
+    --card:#1e293b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Segoe UI,sans-serif;
+    background:var(--light);
+    color:var(--text);
+    transition:.3s;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    backdrop-filter:blur(15px);
+    background:rgba(0,0,0,.15);
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#9be15d;
+}
+
+.hero{
+    height:100vh;
+    background:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.5);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    max-width:800px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#9be15d;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.cta-btn{
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+    padding:15px 35px;
+    border-radius:50px;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.cta-btn:hover{
+    transform:translateY(-4px);
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.about{
+    padding:100px 0;
+}
+
+.about h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.about p{
+    text-align:center;
+}
+
+.cards{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:var(--card);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:3rem;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.stats{
+    background:#eef8ee;
+    padding:100px 0;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.stat{
+    text-align:center;
+}
+
+.counter{
+    font-size:4rem;
+    color:var(--primary);
+    font-weight:bold;
+}
+
+.gallery{
+    padding:100px 8%;
+}
+
+.gallery h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+
+footer{
+    background:#1b4332;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.socials{
+    margin:20px 0;
+}
+
+.socials a{
+    color:white;
+    font-size:1.5rem;
+    margin:0 10px;
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:25px;
+    height:3px;
+    background:white;
+}
+
+#theme-toggle{
+    border:none;
+    background:none;
+    color:white;
+    font-size:1.2rem;
+    cursor:pointer;
+}
+
+.actions{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:80px;
+        right:-100%;
+        flex-direction:column;
+        background:#1b4332;
+        width:250px;
+        padding:20px;
+        transition:.4s;
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+}
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+
+    reveals.forEach(el => {
+
+        const top = el.getBoundingClientRect().top;
+
+        if(top < window.innerHeight - 100){
+            el.classList.add("active");
+        }
+
+    });
+
+});
+
+const counters = document.querySelectorAll(".counter");
+
+const startCounters = () => {
+
+    counters.forEach(counter => {
+
+        const target = +counter.dataset.target;
+
+        let count = 0;
+
+        const update = () => {
+
+            count += target / 100;
+
+            if(count < target){
+                counter.innerText = Math.floor(count);
+                requestAnimationFrame(update);
+            }else{
+                counter.innerText = target;
+            }
+        };
+
+        update();
+
+    });
+
+};
+
+const statsSection = document.querySelector(".stats");
+
+let started = false;
+
+window.addEventListener("scroll", () => {
+
+    if(
+        statsSection.getBoundingClientRect().top <
+        window.innerHeight &&
+        !started
+    ){
+        startCounters();
+        started = true;
+    }
+
+});
+
+const hamburger =
+document.querySelector(".hamburger");
+
+const nav =
+document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+
+    nav.classList.toggle("active");
+
+});
+
+const themeToggle =
+document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+});
