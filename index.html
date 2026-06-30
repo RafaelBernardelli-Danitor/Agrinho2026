@@ -6,194 +6,287 @@
 
 <head>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Agro Forte</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Forte - Futuro Sustentável</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
 body{
-font-family: Arial;
-margin:0;
-background:#e8f5e9;
-color:#222;
+    background:linear-gradient(135deg,#4CAF50,#81C784,#A5D6A7);
+    color:#fff;
+    scroll-behavior:smooth;
 }
 
 header{
-background:#2e7d32;
-color:white;
-padding:20px;
-text-align:center;
+    text-align:center;
+    padding:50px 20px;
+    background:rgba(0,0,0,0.25);
+    backdrop-filter:blur(5px);
+}
+
+header h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:20px;
 }
 
 nav{
-background:#388e3c;
-padding:10px;
-text-align:center;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    background:#1b5e20;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 nav a{
-color:white;
-margin:10px;
-text-decoration:none;
+    text-decoration:none;
+    color:white;
+    background:#43a047;
+    padding:10px 18px;
+    border-radius:30px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+nav a:hover{
+    background:#66bb6a;
+    transform:scale(1.08);
 }
 
 section{
-padding:20px;
-margin:10px;
-background:white;
-border:1px solid #ccc;
+    max-width:1100px;
+    margin:40px auto;
+    padding:30px;
+    background:rgba(255,255,255,.15);
+    border-radius:20px;
+    backdrop-filter:blur(8px);
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
 }
 
 h2{
-color:#2e7d32;
+    text-align:center;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
 }
 
 .card{
-border:1px solid #ccc;
-padding:10px;
-margin:10px 0;
+    background:white;
+    color:#2e7d32;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.card:hover{
+    transform:translateY(-8px);
 }
 
 button{
-padding:10px;
-margin-top:10px;
-background:#2e7d32;
-color:white;
-border:none;
-cursor:pointer;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+    margin-top:20px;
+}
+
+button:hover{
+    background:#43a047;
+    transform:scale(1.05);
+}
+
+#mensagem{
+    margin-top:20px;
+    font-size:20px;
+    text-align:center;
+    color:#fff700;
+    font-weight:bold;
 }
 
 footer{
-background:#2e7d32;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:20px;
+    text-align:center;
+    background:#1b5e20;
+    padding:20px;
+    margin-top:50px;
 }
 
 img{
-width:100%;
-max-width:600px;
+    width:100%;
+    border-radius:15px;
+    margin-top:20px;
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Agro Forte: Futuro Sustentável</h1>
-<p>Equilíbrio entre produção e meio ambiente</p>
+    <h1>🌱 Agro Forte, Futuro Sustentável</h1>
+    <p>Equilíbrio entre produção agrícola e preservação do meio ambiente.</p>
 </header>
 
 <nav>
-<a href="#inicio">Início</a>
-<a href="#historia">História</a>
-<a href="#tecnologia">Tecnologia</a>
-<a href="#sustentabilidade">Sustentabilidade</a>
-<a href="#galeria">Galeria</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#beneficios">Benefícios</a>
+    <a href="#acoes">Ações Sustentáveis</a>
+    <a href="#interativo">Interativo</a>
 </nav>
 
-<section id="inicio">
-<h2>Introdução</h2>
+<section id="sobre">
+    <h2>🌾 O Agro e o Futuro Sustentável</h2>
 
-<p>
-O agronegócio é muito importante para o Brasil, pois produz alimentos e gera empregos.
-Hoje ele também busca formas mais sustentáveis de produção, cuidando do meio ambiente.
+    <p style="font-size:18px; line-height:1.8;">
+        O agronegócio é responsável por alimentar milhões de pessoas e movimentar a economia.
+        Porém, produzir alimentos de forma sustentável significa utilizar tecnologias,
+        preservar os recursos naturais, reduzir desperdícios e proteger a biodiversidade.
+        O equilíbrio entre produção e meio ambiente garante um futuro melhor para todos.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1200" alt="Campo agrícola">
+</section>
+
+<section id="beneficios">
+
+<h2>✅ Benefícios da Agricultura Sustentável</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌳 Preservação</h3>
+<p>Protege florestas, rios e a biodiversidade.</p>
+</div>
+
+<div class="card">
+<h3>🚜 Tecnologia</h3>
+<p>Uso de máquinas modernas reduz impactos ambientais.</p>
+</div>
+
+<div class="card">
+<h3>💧 Economia de Água</h3>
+<p>Irrigação inteligente diminui desperdícios.</p>
+</div>
+
+<div class="card">
+<h3>🌎 Futuro Verde</h3>
+<p>Produção eficiente com responsabilidade ambiental.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="acoes">
+
+<h2>♻️ Ações Sustentáveis</h2>
+
+<div class="cards">
+
+<div class="card">
+🌱 Plantio Direto
+</div>
+
+<div class="card">
+🌾 Rotação de Culturas
+</div>
+
+<div class="card">
+☀️ Energia Solar
+</div>
+
+<div class="card">
+🚰 Reuso da Água
+</div>
+
+<div class="card">
+🐝 Proteção dos Polinizadores
+</div>
+
+<div class="card">
+🌳 Recuperação de Áreas Degradadas
+</div>
+
+</div>
+
+</section>
+
+<section id="interativo">
+
+<h2>🌿 Descubra sua mensagem sustentável</h2>
+
+<p style="text-align:center;">
+Clique no botão abaixo para receber uma mensagem sobre sustentabilidade.
 </p>
 
-<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800">
-</section>
-
-<section id="historia">
-<h2>História do Agro</h2>
-
-<p>
-O agronegócio brasileiro começou com culturas como cana-de-açúcar e café.
-Com o tempo, cresceu muito e hoje o Brasil é um dos maiores produtores do mundo.
-</p>
-
-</section>
-
-<section id="tecnologia">
-<h2>Tecnologia no Campo</h2>
-
-<div class="card">
-Drones ajudam a monitorar plantações.
+<div style="text-align:center;">
+<button onclick="mostrarMensagem()">Clique Aqui</button>
 </div>
 
-<div class="card">
-GPS é usado para melhorar o plantio.
-</div>
-
-<div class="card">
-Sensores ajudam na irrigação.
-</div>
-
-</section>
-
-<section id="sustentabilidade">
-<h2>Sustentabilidade</h2>
-
-<p>
-Sustentabilidade significa produzir sem destruir o meio ambiente.
-Isso inclui cuidar da água, do solo e das florestas.
-</p>
-
-<div class="card">
-Economia de água na irrigação
-</div>
-
-<div class="card">
-Preservação das florestas
-</div>
-
-</section>
-
-<section id="galeria">
-<h2>Galeria</h2>
-
-<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800">
-<img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800">
-
-</section>
-
-<section>
-<h2>Mensagem</h2>
-
-<button onclick="msg()">Clique aqui</button>
-
-<p id="texto"></p>
+<div id="mensagem"></div>
 
 </section>
 
 <footer>
-<p>Trabalho escolar - Agro Forte</p>
+
+<h3>🌎 Agro Forte, Futuro Sustentável</h3>
+
+<p>
+Produzir com responsabilidade é garantir alimento hoje e preservar o planeta para as próximas gerações.
+</p>
+
 </footer>
 
 <script>
 
-function msg(){
+const mensagens = [
 
-let mensagens = [
-"O agro sustentável ajuda o planeta.",
-"Produzir com cuidado é importante.",
-"A tecnologia melhora o campo."
+"🌱 Cada árvore preservada ajuda a construir um futuro melhor!",
+
+"🚜 Tecnologia e sustentabilidade caminham juntas no campo.",
+
+"💧 Economizar água é proteger a vida.",
+
+"🌾 Produzir alimentos com responsabilidade beneficia toda a sociedade.",
+
+"🌎 O futuro sustentável começa com pequenas atitudes."
+
 ];
 
-let i = Math.floor(Math.random()*mensagens.length);
+function mostrarMensagem(){
 
-document.getElementById("texto").innerHTML = mensagens[i];
+let numero = Math.floor(Math.random()*mensagens.length);
+
+document.getElementById("mensagem").innerHTML = mensagens[numero];
 
 }
 
 </script>
 
 </body>
-</html>
-
-
-
 </html>
